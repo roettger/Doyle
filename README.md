@@ -19,7 +19,29 @@ The necessary packages are: scattertext, pandas, and glob.
     The resulting visualization is saved to an HTML file named 'scattertext_visualization.html'.
     
     
- ## Distinctive words in detective fiction (Doyle corpus) 
+ ## Results
+ Top 10 distinctive words for detective:
+Index(['holmes', 'watson', 'sherlock', 'sherlock holmes', 'baskerville',
+       'sir henry', 'the moor', 'sir charles', 'stapleton', 'moor'],
+      dtype='object', name='term')
+
+Top 10 distinctive words for horror:
+Index(['haw', 'raffles', 'raffles haw', 'mcintyre', 'robert', 'laura',
+       'penclosa', 'wilson', 'agatha', 'miss penclosa'],
+      dtype='object', name='term')
+
+Top 10 distinctive words for adventure:
+Index(['lord john', 'summerlee', 'challenger', 'professor challenger',
+       'plateau', 'professor', 'said lord', 'roxton', 'said challenger',
+       'professor summerlee'],
+      dtype='object', name='term')
+
+Top 10 distinctive words for historical:
+Index(['alleyne', 'nigel', 'sir nigel', 'catinat', 'de catinat', 'sire',
+       'amos', 'aylward', 'hath', 'nay'],
+      dtype='object', name='term')
+      
+ ## Visualization of distinctive words in detective fiction (Doyle corpus) 
 
 
 ![Distinctive words in detective fiction](https://raw.githubusercontent.com/roettger/Doyle/main/scattertext.PNG)
