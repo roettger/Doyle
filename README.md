@@ -1,12 +1,12 @@
 # Finding distinctive words per genre
 
-## data 
+## Data 
 The exploration corpus consists of novels in four different genres: detective, historical, adventure and horror. All novels are written by Arthur Conan Doyle.
 
-## packages 
+## Packages 
 The necessary packages are: scattertext, pandas, and glob.
 
-## method
+## Method
 
     A corpus list is initialized to hold the texts and genre labels of the files that will be read in.
     The script iterates through the folders containing the text files for each genre, reading in each file and adding its text and genre label to the corpus list.
@@ -19,7 +19,7 @@ The necessary packages are: scattertext, pandas, and glob.
     The resulting visualization is saved to an HTML file named 'scattertext_visualization.html'.
     
     
- ## visualisation
+ ## Distinctive words in detective fiction (Doyle corpus) 
 
 
 ![Distinctive words in detective fiction](https://raw.githubusercontent.com/roettger/Doyle/main/scattertext.PNG))
