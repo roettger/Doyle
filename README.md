@@ -47,9 +47,6 @@ Index(['alleyne', 'nigel', 'sir nigel', 'catinat', 'de catinat', 'sire',
 ![Distinctive words in detective fiction](https://raw.githubusercontent.com/roettger/Doyle/main/scattertext.PNG)
 
 
-Interactive HTML-file: https://github.com/roettger/Doyle/blob/main/scattertext_visualization.html 
-
-
 ## Read on
 
 Lavin, Matthew J. (2019): "Analyzing Documents with TF-IDF", in: Programming Historian: https://doi.org/10.46430/phen0082.
