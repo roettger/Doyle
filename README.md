@@ -22,4 +22,4 @@ The necessary packages are: scattertext, pandas, and glob.
  ## visualisation
 
 
-![Distinctive words in detective fiction]([http://url/to/img.png](https://raw.githubusercontent.com/roettger/Doyle/main/scattertext.PNG))
+![Distinctive words in detective fiction](https://raw.githubusercontent.com/roettger/Doyle/main/scattertext.PNG))
