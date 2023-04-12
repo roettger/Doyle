@@ -22,4 +22,7 @@ The necessary packages are: scattertext, pandas, and glob.
  ## Distinctive words in detective fiction (Doyle corpus) 
 
 
-![Distinctive words in detective fiction](https://raw.githubusercontent.com/roettger/Doyle/main/scattertext.PNG))
+![Distinctive words in detective fiction](https://raw.githubusercontent.com/roettger/Doyle/main/scattertext.PNG)
+
+
+Interactive HTML-file: https://github.com/roettger/Doyle/blob/main/scattertext_visualization.html 
