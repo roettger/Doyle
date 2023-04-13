@@ -20,25 +20,29 @@ The necessary packages are: scattertext, pandas, and glob.
     
     
  ## Results
- Top 10 distinctive words for detective:
+ Top 15 distinctive ngrams for detective:
 Index(['holmes', 'watson', 'sherlock', 'sherlock holmes', 'baskerville',
-       'sir henry', 'the moor', 'sir charles', 'stapleton', 'moor'],
+       'sir henry', 'the moor', 'sir charles', 'stapleton', 'moor', 'mortimer',
+       'said holmes', 'henry', 'dr', 'sholto'],
       dtype='object', name='term')
 
-Top 10 distinctive words for horror:
+Top 15 distinctive ngrams for horror:
 Index(['haw', 'raffles', 'raffles haw', 'mcintyre', 'robert', 'laura',
-       'penclosa', 'wilson', 'agatha', 'miss penclosa'],
+       'penclosa', 'wilson', 'agatha', 'miss penclosa', 'hector', 'his father',
+       'laboratory', 'said robert', 'money'],
       dtype='object', name='term')
 
-Top 10 distinctive words for adventure:
+Top 15 distinctive ngrams for adventure:
 Index(['lord john', 'summerlee', 'challenger', 'professor challenger',
        'plateau', 'professor', 'said lord', 'roxton', 'said challenger',
-       'professor summerlee'],
+       'professor summerlee', 'the plateau', 'the professor', 'malone', 'ape',
+       'creatures'],
       dtype='object', name='term')
 
-Top 10 distinctive words for historical:
+Top 15 distinctive ngrams for historical:
 Index(['alleyne', 'nigel', 'sir nigel', 'catinat', 'de catinat', 'sire',
-       'amos', 'aylward', 'hath', 'nay'],
+       'amos', 'aylward', 'hath', 'nay', 'de', 'the king', 'king', 'madame',
+       'france'],
       dtype='object', name='term')
       
  ## Visualization of distinctive words in detective fiction (Doyle corpus) 
