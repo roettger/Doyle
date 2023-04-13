@@ -8,7 +8,7 @@ Here's how the code works:
     The corpus list is converted into a pandas DataFrame.
     The text data in the DataFrame is preprocessed using the whitespace_nlp_with_sentences method from scattertext.
     A scattertext corpus object is created from the parsed texts in the DataFrame and the genre labels.
-    The top 15 distinctive words for each genre are extracted using tf-idf scoring.
+    The top 20 distinctive words for each genre are extracted using tf-idf scoring.
     The distinctive words for each genre are printed to the console.
     A scattertext visualization is created using the produce_scattertext_explorer method. This method takes in several parameters, including the corpus, the category to focus on (in this case, 'detective'), the names for the category and non-category (i.e., 'Other Genres'), the minimum frequency for a term to be included, and the width of the visualization in pixels.
     The resulting visualization is saved to an HTML file named 'scattertext_visualization.html'.
@@ -38,7 +38,7 @@ df['parsed'] = df['text'].apply(nlp)
 # Create the corpus using the parsed texts and the genre labels 
 corpus = st.CorpusFromParsedDocuments(df, category_col='genre', parsed_col='parsed').build() 
 
-# Use tf-idf to extract the top 15 distinctive words per genre 
+# Use tf-idf to extract the top 20 distinctive words per genre 
 term_freq_df = corpus.get_term_freq_df()
 term_freq_df['detective'] = corpus.get_scaled_f_scores('detective')
 term_freq_df['horror'] = corpus.get_scaled_f_scores('horror')
@@ -46,8 +46,8 @@ term_freq_df['adventure'] = corpus.get_scaled_f_scores('adventure')
 term_freq_df['historical'] = corpus.get_scaled_f_scores('historical')
 term_freq_df['max_genre'] = term_freq_df[['detective', 'horror', 'adventure', 'historical']].idxmax(axis=1)
 for genre in ['detective', 'horror', 'adventure', 'historical']:
-    print(f"\nTop 15 distinctive words for {genre}:")
-    print(term_freq_df.sort_values(by=genre, ascending=False).index[:15])
+    print(f"\nTop 20 distinctive words for {genre}:")
+    print(term_freq_df.sort_values(by=genre, ascending=False).index[:20])
 
 # Use scattertext to create the visualization 
 html = st.produce_scattertext_explorer(
