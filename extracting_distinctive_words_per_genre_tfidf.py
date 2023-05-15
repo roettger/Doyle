@@ -47,7 +47,7 @@ term_freq_df['historical'] = corpus.get_scaled_f_scores('historical')
 term_freq_df['max_genre'] = term_freq_df[['detective', 'horror', 'adventure', 'historical']].idxmax(axis=1)
 for genre in ['detective', 'horror', 'adventure', 'historical']:
     print(f"\nTop 20 distinctive words for {genre}:")
-    print(term_freq_df.sort_values(by=genre, ascending=False).index[:20])
+    print(term_freq_df.sort_values(by=genre, ascending=False).index[:10])
 
 # Use scattertext to create the visualization 
 html = st.produce_scattertext_explorer(
